@@ -48,8 +48,18 @@ p {
   border: 1px solid #eaeaea;
   color: #777;
   width: 263px;
-  margin-top: 1em;
   padding: 1em 1.8em;
+}
+
+.progress-bar {
+  background: #EF5F3C;
+  position: relative;
+  border: 1px solid #eaeaea;
+  height: 15px;
+  width: 263px;
+  align-self: start;
+  margin-top: .5em;
+  margin-left: 11.46em;
 }
 
 .donation-actions {
