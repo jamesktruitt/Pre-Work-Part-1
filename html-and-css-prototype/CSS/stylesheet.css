@@ -32,7 +32,7 @@ p {
 }
 
 .amt-remaining {
-  font-size: 12px;
+  font-size: 13px;
   color: #eaeaea;
   height: 45px;
   width: 263px;
@@ -40,6 +40,16 @@ p {
   border-radius: 2px;
   padding: 14px;
   margin-top: 1em;
+}
+
+.box.arrow-bottom:after {
+  content: " ";
+  position: absolute;
+  right: 310px;
+  border-top: 6px solid #424242;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: none;
 }
 
 .donation-component {
