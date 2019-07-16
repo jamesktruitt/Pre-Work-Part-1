@@ -51,15 +51,30 @@ p {
   padding: 1em 1.8em;
 }
 
-.progress-bar {
-  background: #EF5F3C;
-  position: relative;
+progress[value] {
   border: 1px solid #eaeaea;
-  height: 15px;
   width: 263px;
   align-self: start;
   margin-top: .5em;
   margin-left: 11.46em;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #EF5F3C;
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .donation-actions {
@@ -71,7 +86,8 @@ p {
 input {
   height: 45px;
   width: 108px;
-  font-size: 14px;
+  font-size: 14px bold;
+  color: #424242;
   padding: 8px;
   border: 1px solid #eaeaea;
   border-radius: 3px;
@@ -90,7 +106,6 @@ input {
 .user-actions {
   display: flex;
   justify-content: space-between;
-
   width: 263px;
   margin-top: 0.8em;
 }
