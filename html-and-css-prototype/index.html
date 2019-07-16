@@ -4,16 +4,37 @@
     <meta charset="utf-8">
     <title>HTML/CSS Prototype</title>
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="container">
-      <h1>Recreate this using HTML &amp; CSS</h1>
-      <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
-    </div>
-
     <!-- Your code goes here -->
-
-
-
+    <main class='container'>
+      <h1>Recreate this using HTML &amp; CSS</h1>
+      <p class='amt-remaining'>
+        <strong>$167</strong>
+        still needed for this project
+      </p>
+      <section class='donation-component'>
+        <p>
+          <Strong style='color: #EF5F3C'>Only 3 days left</strong>
+          to fund this project.
+        </p><br>
+        <p>
+          Join the <strong>42</strong>
+          other donors who have already supported this project.
+          Every dollar helps.
+        </p>
+        <div class='donation-actions'>
+          <input type='number' placeholder='$'>
+          <button class='donate-btn' type='submit'> <strong>Give Now</strong></button>
+        </div>
+        <p style='color: #20A1D4'><em>Why give $50?</em></p>
+      </section>
+      <div class='user-actions'>
+        <button class='save-btn' type='text'> <strong>Save for later</strong></button>
+        <button class='share-btn' type='text'><strong>Tell your friends</strong></button>
+      </div>
+    </main>
   </body>
 </html>

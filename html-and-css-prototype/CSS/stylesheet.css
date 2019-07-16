@@ -1,27 +1,108 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
 }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Enriqueta", serif;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+}
+
+.amt-remaining {
+  font-size: 12px;
+  color: #eaeaea;
+  height: 45px;
+  width: 263px;
+  background-color: #424242;
+  border-radius: 2px;
+  padding: 14px;
+  margin-top: 1em;
+}
+
+.donation-component {
+  text-align: start;
+  font-size: 12px;
+  border: 1px solid #eaeaea;
+  color: #777;
+  width: 263px;
+  margin-top: 1em;
+  padding: 1em 1.8em;
+}
+
+.donation-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+input {
+  height: 45px;
+  width: 108px;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+}
+
+.donate-btn {
+  background-color: #1cbc2c;
+  height: 45px;
+  font-size: 14px;
+  color: #eaeaea;
+  width: 108px;
+  border: none;
+  border-radius: 3px;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: space-between;
+
+  width: 263px;
+  margin-top: 0.8em;
+}
+
+.save-btn {
+  color: #777;
+  background-color: #f7f7f7;
+  height: 34px;
+  width: 200px;
+  font-size: 11px;
+  margin-right: 0.5em;
+  border-radius: 3px;
+}
+
+.share-btn {
+  color: #777;
+  background-color: #f7f7f7;
+  height: 34px;
+  width: 200px;
+  font-size: 11px;
+  margin-left: 0.5em;
+  border-radius: 3px;
 }
 
 /* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
