@@ -42,16 +42,14 @@ p {
   padding: 14px;
 }
 
-.box.arrow-bottom:after {
-  content: " ";
+.box.arrow-bottom:before {
+  content: "";
   position: relative;
   left: 100px;
   top: 5px;
-  border-top: 12px solid #424242;
-  border-right: 12px solid transparent;
-  border-left: 12px solid transparent;
-  border-bottom: none;
-  margin-top: 0px;
+  border-top: 6px solid #424242;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
 }
 
 .donation-component {
@@ -77,15 +75,15 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-    background-color: #EF5F3C;
-    border-radius: 2px; 
-    background-size: 35px 20px, 100% 100%, 100% 100%;
+  background-color: #EF5F3C;
+  border-radius: 2px; 
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
-  margin: 0; 
+  margin: 0;
 }
 
 .donation-actions {
